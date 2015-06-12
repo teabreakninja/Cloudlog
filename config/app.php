@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://cloudlog.mg',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'Td1HtlIJR0AJSjuxpTzdO1sfhRcioNZP'),
 
     'cipher' => 'AES-256-CBC',
 
