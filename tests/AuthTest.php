@@ -7,19 +7,19 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class AuthTest extends TestCase
 {
     /**
-     * A basic functional test example.
+     * Check User registration.
      *
      * @return void
      */
-    public function testBasicExample()
+    public function UserRegTest()
     {
       $this->visit('auth/register')
                ->type('Demo User', 'name')
                ->type('pgoodhall+demo@gmail.com', 'email')
-               ->type('io91js', 'password')
-               ->type('io91js', 'password_confirmation')
+               ->type('cloudlog32', 'password')
+               ->type('cloudlog32', 'password_confirmation')
                ->press('Register')
-               ->seePageIs('/dashboard');
-
+               ->seePageIs('/dashboard')
+               ->seeInDatabase('users', ['email' => 'pgoodhall+demo@gmail.com']);
     }
 }
