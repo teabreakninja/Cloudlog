@@ -31,7 +31,9 @@ Route::get('dashboard', ['middleware' => 'auth', function() {
 }]);
 
 // QSO routes
-Route::get('qso', ['middleware' => 'auth', function() {
-    // Only authenticated users may enter...
-    return "QSO";
+Route::get('qso', ['uses' => 'QsoController@create', 'middleware' => 'auth', function() {
+}]);
+
+Route::post('qso', ['uses' => 'QsoController@store', function() {
+
 }]);
