@@ -32,4 +32,15 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+	  * Logbook relationship
+	  */
+	  public function logbook(){
+
+      return $this
+	     ->belongsToMany('App\Logbook')
+	     ->whereNull('logbook_user.deleted_at') // Table `logbook_user` has column `deleted_at`
+	     ->withTimestamps(); // Table `logbook_user` has columns: `created_at`, `updated_at`
+    }
 }

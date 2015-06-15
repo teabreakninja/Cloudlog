@@ -37,3 +37,8 @@ Route::get('qso', ['uses' => 'QsoController@create', 'middleware' => 'auth', fun
 Route::post('qso', ['uses' => 'QsoController@store', function() {
 
 }]);
+
+
+Route::get('/testlog', function () {
+
+});
