@@ -1,0 +1,10 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.profile-img {
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
