@@ -1943,7 +1943,7 @@
         ],
         "authors": [
             {
-                "name": "Pádraic Brady",
+                "name": "Padraic Brady",
                 "email": "padraic.brady@gmail.com",
                 "homepage": "http://blog.astrumfutura.com"
             },
@@ -2406,17 +2406,17 @@
     },
     {
         "name": "doctrine/instantiator",
-        "version": "1.0.4",
-        "version_normalized": "1.0.4.0",
+        "version": "1.0.5",
+        "version_normalized": "1.0.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/doctrine/instantiator.git",
-            "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119"
+            "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f976e5de371104877ebc89bd8fecb0019ed9c119",
-            "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119",
+            "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
+            "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
             "shasum": ""
         },
         "require": {
@@ -2427,9 +2427,9 @@
             "ext-pdo": "*",
             "ext-phar": "*",
             "phpunit/phpunit": "~4.0",
-            "squizlabs/php_codesniffer": "2.0.*@ALPHA"
+            "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2014-10-13 12:58:55",
+        "time": "2015-06-14 21:17:01",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2438,8 +2438,8 @@
         },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "Doctrine\\Instantiator\\": "src"
+            "psr-4": {
+                "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -2678,34 +2678,31 @@
     },
     {
         "name": "phpunit/php-timer",
-        "version": "1.0.5",
-        "version_normalized": "1.0.5.0",
+        "version": "1.0.6",
+        "version_normalized": "1.0.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/php-timer.git",
-            "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c"
+            "reference": "83fe1bdc5d47658b727595c14da140da92b3d66d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
-            "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
+            "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/83fe1bdc5d47658b727595c14da140da92b3d66d",
+            "reference": "83fe1bdc5d47658b727595c14da140da92b3d66d",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2013-08-02 07:42:54",
+        "time": "2015-06-13 07:35:30",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
             "classmap": [
-                "PHP/"
+                "src/"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
-        "include-path": [
-            ""
-        ],
         "license": [
             "BSD-3-Clause"
         ],
@@ -2724,17 +2721,17 @@
     },
     {
         "name": "phpunit/php-token-stream",
-        "version": "1.4.1",
-        "version_normalized": "1.4.1.0",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-            "reference": "eab81d02569310739373308137284e0158424330"
+            "reference": "db63be1159c81df649cd0260e30249a586d4129e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/eab81d02569310739373308137284e0158424330",
-            "reference": "eab81d02569310739373308137284e0158424330",
+            "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db63be1159c81df649cd0260e30249a586d4129e",
+            "reference": "db63be1159c81df649cd0260e30249a586d4129e",
             "shasum": ""
         },
         "require": {
@@ -2744,7 +2741,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.2"
         },
-        "time": "2015-04-08 04:46:07",
+        "time": "2015-06-12 07:34:24",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3074,6 +3071,115 @@
             "specification",
             "testing",
             "tests"
+        ]
+    },
+    {
+        "name": "thomaswelton/gravatarlib",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "target-dir": "thomaswelton/GravatarLib",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thomaswelton/gravatarlib.git",
+            "reference": "8a4e829c53ca2abb51ef2e514f696938a9bdbd0c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thomaswelton/gravatarlib/zipball/8a4e829c53ca2abb51ef2e514f696938a9bdbd0c",
+            "reference": "8a4e829c53ca2abb51ef2e514f696938a9bdbd0c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "twig/twig": ">=1.4.0"
+        },
+        "time": "2014-03-02 18:29:18",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "thomaswelton\\GravatarLib\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Sam Thompson",
+                "email": "sam@emberlabs.org"
+            },
+            {
+                "name": "Damian Bushong",
+                "email": "damian@emberlabs.org"
+            },
+            {
+                "name": "Thomas Welton",
+                "email": "thomaswelton@me.com",
+                "homepage": "https://github.com/thomaswelton",
+                "role": "Developer"
+            }
+        ],
+        "description": "A lightweight PHP 5.3 OOP library providing easy gravatar integration.",
+        "keywords": [
+            "gravatar",
+            "templating",
+            "twig"
+        ]
+    },
+    {
+        "name": "thomaswelton/laravel-gravatar",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thomaswelton/laravel-gravatar.git",
+            "reference": "c688c5823778a22f511358fd0717aa44f5655a26"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thomaswelton/laravel-gravatar/zipball/c688c5823778a22f511358fd0717aa44f5655a26",
+            "reference": "c688c5823778a22f511358fd0717aa44f5655a26",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~5.0",
+            "php": ">=5.4.0",
+            "thomaswelton/gravatarlib": "0.1.x"
+        },
+        "time": "2015-05-14 15:26:16",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Thomaswelton\\LaravelGravatar": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "ThomasWelton",
+                "email": "thomaswelton@me.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Antoine Augusti",
+                "email": "antoine.augusti@gmail.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Laravel 5 Gravatar helper",
+        "homepage": "https://github.com/thomaswelton/laravel-gravatar",
+        "keywords": [
+            "gravatar",
+            "laravel",
+            "laravel5"
         ]
     }
 ]
